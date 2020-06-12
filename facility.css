@@ -1,0 +1,110 @@
+html, * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+}
+body {
+    font-family: 'Play';
+    color: white;
+}
+.facility {
+    border: 1px solid black;
+    /* height: 600px; */
+    background-color: #DB8837;
+}
+
+.facility .container .contents {
+    /* border: 1px solid black; */
+    padding: 120px 30px;
+}
+.contents h1 {
+    font-family: 'Play';
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+text-transform: uppercase;
+
+}
+.contents p {
+    font-family: Play;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+/* width: 50%; */
+}
+
+.contents .cards {
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+}
+.cards .card1, .card2, .card3 {
+    /* border: 1px solid black; */
+    height: 350px;
+    width: 270px;
+    display: inline-block;
+    margin-right: 15px;
+    
+    /* text-align: center; */
+}
+.cards h3 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px)    {
+    .facility .contents {
+        /* border: 1px solid black; */
+        padding: 80px 10px;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 991px)    {
+    .cards .card1, .card2, .card3{
+        width: 280px;
+        /* border: 1px solid black; */
+        margin-right: 30px;
+    }
+    .cards img {
+        width: 300px;
+        
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .cards .card1, .card2, .card3{
+       margin-top: 40px;
+       margin-right: 20px;
+    }
+    .cards {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .cards img {
+        width: 200px;
+        
+    }
+    .cards .card1, .card2, .card3{
+        width: 280px;
+        /* border: 1px solid black; */
+        height: 300px;
+        margin-right: 0px;
+    }
+    .facility .container .contents {
+        /* border: 1px solid black; */
+        padding: 50px 0px;
+    }
+    .contents .cards {
+        margin-top: 40px;
+    }
+}
